@@ -1,8 +1,8 @@
 let price;
 let country = prompt (`Укажите название Вашей страны для доставки товара`);
+country = String(country).toLowerCase();
 
-
-switch(country.toLowerCase()) {
+switch(country) {
     case 'китай':
     price = 100;
     console.log (`Доставка в ${country} будет стоить ${price} кредитов`);
