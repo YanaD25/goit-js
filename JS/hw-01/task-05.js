@@ -28,6 +28,10 @@ switch(country) {
     console.log (`Доставка в ${country} будет стоить ${price} кредитов`);
     break;
 
+    case 'null':
+    console.log (`Отменено пользователем`);
+    break;
+
     default: 
     alert('В Вашей стране доставка не доступна')
 }
