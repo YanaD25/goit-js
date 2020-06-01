@@ -1,11 +1,5 @@
     const formatString = function (string) {
-        if (string.length >= 40) {
-            const stringSpell = string.split('');
-            stringSpell.length = 40;
-            string = stringSpell.join('');
-            return console.log(string,'...');
-        }
-        return console.log(string);
+      return (string.length <= 40 ? string : `${string.slice(0, 40)}...`);
     };
   
     /*
