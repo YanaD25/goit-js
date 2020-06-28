@@ -14,4 +14,3 @@ const getUsersWithEyeColor = (users, color) => users.filter(user => color === us
 
   
   console.log(getUsersWithEyeColor(users, 'blue')); // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
-s
