@@ -9,8 +9,9 @@ console.log(getUserNames(users));
 
 
 // TASK-02
-const getUsersWithEyeColor = (users, color) => users.map((user) => user.eyeColor);
+const getUsersWithEyeColor = (users, color) => users.filter(user => color === user.eyeColor);
     // твой код
 
   
   console.log(getUsersWithEyeColor(users, 'blue')); // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
+s
