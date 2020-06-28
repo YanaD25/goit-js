@@ -15,15 +15,15 @@ const getUsersWithEyeColor = (users, color) =>
 console.log(getUsersWithEyeColor(users, "blue")); // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
 
 // TASK-03
-const getUsersWithGender = (users, gender) => {
+const getUsersWithGender = (users, gender) => 
   users.filter((user) => gender === user.gender).map((user) => user.name);
   // твой код
-};
+
 
 console.log(getUsersWithGender(users, "male")); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
 
 // TASK-04
-const getInactiveUsers = (users) => users.filter(user => !user.isActiv);
+const getInactiveUsers = (users) => users.filter(user => !user.isActive);
   // твой код
 
 
