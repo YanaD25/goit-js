@@ -52,6 +52,7 @@ const calculateTotalBalance = (users) =>
 // твой код
 
 console.log(calculateTotalBalance(users)); // 20916
+
 // TASK-08
 const getUsersWithFriend = (users, friendName) =>
   users.filter((user) => friendName === user.friends).map((user) => user.name);
@@ -59,3 +60,20 @@ const getUsersWithFriend = (users, friendName) =>
 
 console.log(getUsersWithFriend(users, "Briana Decker")); // [ 'Sharlene Bush', 'Sheree Anthony' ]
 console.log(getUsersWithFriend(users, "Goldie Gentry")); // [ 'Elma Head', 'Sheree Anthony' ]
+
+// TASK-09
+const getNamesSortedByFriendsCount = (users) =>
+  // твой код
+
+  users.sort((userPrev, userNext) => userPrev.friends.length - userNext.friends.length).map((user) => user.name);
+console.log(getNamesSortedByFriendsCount(users));
+// [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
+
+
+// TASK-10
+const getSortedUniqueSkills = users => 
+    // твой код
+  
+  
+  console.log(getSortedUniqueSkills(users));
+  // [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit', 'non', 'nostrud', 'nulla', 'proident', 'tempor', 'velit', 'veniam' ]
