@@ -65,15 +65,18 @@ console.log(getUsersWithFriend(users, "Goldie Gentry")); // [ 'Elma Head', 'Sher
 const getNamesSortedByFriendsCount = (users) =>
   // твой код
 
-  users.sort((userPrev, userNext) => userPrev.friends.length - userNext.friends.length).map((user) => user.name);
+  users
+    .sort(
+      (userPrev, userNext) => userPrev.friends.length - userNext.friends.length
+    )
+    .map((user) => user.name);
 console.log(getNamesSortedByFriendsCount(users));
 // [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
 
-
 // TASK-10
-const getSortedUniqueSkills = users => 
-    // твой код
-  
-  
-  console.log(getSortedUniqueSkills(users));
-  // [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit', 'non', 'nostrud', 'nulla', 'proident', 'tempor', 'velit', 'veniam' ]
+const getSortedUniqueSkills = (users) =>
+  // твой код
+  users.map((user) => user.skills).users.reduce((acc, skill) => acc + users.skills,[]).
+
+console.log(getSortedUniqueSkills(users));
+// [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit', 'non', 'nostrud', 'nulla', 'proident', 'tempor', 'velit', 'veniam' ]
