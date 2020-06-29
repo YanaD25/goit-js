@@ -77,9 +77,9 @@ console.log(getNamesSortedByFriendsCount(users));
 const getSortedUniqueSkills = (users) => {
   // твой код
   const allSkills = users.reduce(
-    (acc, users) => [...acc, users.skills],
-    []
-  );
+    (acc, users) => [...acc, ...users.skills],
+    []);
+  
   const nonRepeatSkills = [];
   allSkills.forEach((skill) => {
     if (!nonRepeatSkills.includes(skill)) {
