@@ -1,13 +1,17 @@
 const validationInputRef = document.querySelector("#validation-input");
 
-const dataSet = +validationInputRef.dataset.length;
-
-const validationEntry = () => {
-  if (dataSet === validationInputRef.value.length) {
-    validationInputRef.classList.add("valid");
+const validationEntry = (event) => {
+  const dataSet = +validationInputRef.dataset.length;
+  if (event.type === "blur") {
+    if (dataSet === validationInputRef.value.length) {
+      validationInputRef.classList.add("valid");
+    } else {
+      validationInputRef.classList.add("invalid");
+    }
   } else {
-    validationInputRef.classList.add("invalid");
+    validationInputRef.className = "";
   }
 };
 
 validationInputRef.addEventListener("blur", validationEntry);
+validationInputRef.addEventListener("focus", validationEntry);

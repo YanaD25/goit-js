@@ -14,4 +14,3 @@ ingredients.forEach((ingredient) => {
   ingredItem.textContent = ingredient;
   ingredientsList.appendChild(ingredItem);
 });
-console.log(ingredientsList);

@@ -24,4 +24,3 @@ images.forEach((image) => {
     `<li class = "gallery_item"> <img class = "gallery_item-image" src ="${image.url}" alt = "${image.alt}"</li>`
   );
 });
-console.log(galleryRef);
