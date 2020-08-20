@@ -1,5 +1,7 @@
-import menuItem from './../template/menu.hbs';
+import galleryItem from './../templates/menu.hbs';
 import menu from './../menu.json';
-const dish = menuItem(menu);
-const menuRef = document.querySelector('.js-menu');
-menuRef.insertAdjacentElement('beforeend', menu);
+
+const  markUp = galleryItem(menu);
+const galleryRef = document.querySelector('.js-menu');
+
+galleryRef.insertAdjacentHTML('beforeend', markUp);
