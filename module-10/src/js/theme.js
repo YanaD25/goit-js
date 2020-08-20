@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (localStorage.load('theme') === 'dark-theme') {
     btnRef.checked = true;
   }
-  bodyRefy.classList.add(localStorage.load('theme'));
+  bodyRef.classList.add(localStorage.load('theme'));
 });
 
 
